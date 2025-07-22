@@ -20,7 +20,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid #F4C430;
-  
+    margin: 3pt;  
 }
 
 
@@ -79,6 +79,8 @@ body {
 .about-content {
   border-radius: 10px;
   box-shadow: 0 0 10px #333333;
+    border: 3px solid #FFD700;
+    padding: 5pc;
 }
 
 .about h3 {
@@ -105,7 +107,7 @@ body {
   flex-direction: column;       
   justify-content: space-between;
   gap: 20px;
-    text-align: center;
+  text-align: center;
   flex-wrap: wrap;         
 }
 .project {
@@ -116,6 +118,8 @@ body {
   width: 40%;               
   box-sizing: border-box;
   margin: 20px auto; 
+    box-shadow: 0 0 10px #333333;
+
 
 }
 
