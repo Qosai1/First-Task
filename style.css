@@ -114,15 +114,26 @@ body {
 
 /* projects.html */
 
+.projects{
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
 .project {
     background-color: rgb(245, 245, 245);
     border-radius: 12px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 600px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
 
 }
+.projects h2 {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
 
 .project h3 {
     color: rgb(51, 51, 51);
