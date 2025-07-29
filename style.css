@@ -10,7 +10,6 @@
     background-color: rgb(65, 64, 64);
 }
 
-
 body {
     padding-top: 60px;
 
@@ -51,53 +50,6 @@ body {
 
 }
 
-/* hamburger */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-
-
-
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(245, 222, 179);
-}
-
-@media(max-width:768px) {
-    .hamburger {
-        display: flex;
-        margin: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(73, 70, 70, 0.8);
-        position: absolute;
-        top: 70px;
-        display: none;
-        padding: 5px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .menu-toggle:checked~.nav-links {
-        display: flex;
-    }
-
-    .logo {
-        width: 70px;
-        height: 50px;
-
-    }
-}
-
 .hero {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -122,13 +74,12 @@ body {
 /* about.html */
 .about {
     padding: 60px 20px;
-    max-width: 1000px;
+    max-width: 600px;
     margin: auto;
 }
 
 .about h2 {
     text-align: center;
-    font-size: 40px;
     margin-bottom: 30px;
 
 }
@@ -138,7 +89,9 @@ body {
     box-shadow: 0 0 10px rgb(0, 0, 0);
     border: 3px solid rgb(255, 215, 0);
     padding: 40px;
+    line-height: 2;
 }
+
 
 .about h3 {
     color: rgb(0, 0, 0);
@@ -162,31 +115,48 @@ body {
 /* projects.html */
 
 .project {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
-    border: 3px solid rgb(255, 215, 0);
-    width: 40%;
-    box-sizing: border-box;
     margin: 20px auto;
+    max-width: 600px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    text-align: center;
-
 
 }
 
-.project-img {
-    width: 220px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 3%;
-    margin-bottom: 35px;
-    border: 3px solid rgb(0, 0, 0);
+.project h3 {
+    color: rgb(51, 51, 51);
+    margin-bottom: 5px;
 }
 
-.title {
-    text-align: center;
-    padding: 20px;
+.project p,
+.project li {
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+}
+
+.project ul {
+    margin: 10px 0 20px 20px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.project .btn {
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 215, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project .btn:hover {
+    background-color: rgb(255, 215, 0);
 }
 
 /* footer */
@@ -202,7 +172,7 @@ body {
 
 /* CV download */
 .btn-cv {
-    margin: 20pc;
+
     padding: 10px 20px;
     border: 2px solid rgb(255, 215, 0);
     color: rgb(0, 0, 0);
@@ -253,4 +223,69 @@ input:focus {
 input[type=submit] {
     cursor: pointer;
 
+}
+
+/* hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(245, 222, 179);
+}
+
+@media(max-width: 600px) {
+    .hamburger {
+        display: flex;
+        margin: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(73, 70, 70, 0.8);
+        display: none;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu-toggle:checked~.nav-links {
+        display: flex;
+    }
+
+    .logo {
+        width: 70px;
+        height: 50px;
+    }
+
+}
+
+body {
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p,
+    a {
+        font-size: 15px;
+    }
 }
