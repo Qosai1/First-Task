@@ -1,4 +1,10 @@
 /* index.html */
+
+
+* {
+    box-sizing: border-box;
+}
+
 .navbar nav {
     display: flex;
     position: fixed;
@@ -76,6 +82,7 @@ body {
     padding: 60px 20px;
     max-width: 600px;
     margin: auto;
+
 }
 
 .about h2 {
@@ -85,9 +92,10 @@ body {
 }
 
 .about-content {
+    background-color: rgb(245, 245, 245);
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    border: 3px solid rgb(255, 215, 0);
+    border: 3px solid rgb(19, 19, 18);
     padding: 40px;
     line-height: 2;
 }
@@ -114,7 +122,7 @@ body {
 
 /* projects.html */
 
-.projects{
+.projects {
     padding: 60px 20px;
     max-width: 600px;
     margin: auto;
@@ -125,9 +133,11 @@ body {
     border-radius: 12px;
     padding: 20px;
     margin: 20px auto;
+    border: 3px solid rgb(19, 19, 18);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 
 }
+
 .projects h2 {
     text-align: center;
     margin-top: 30px;
@@ -141,7 +151,7 @@ body {
 }
 
 .project p,
-.project li {
+li {
     color: rgb(68, 68, 68);
     line-height: 1.6;
 }
@@ -215,7 +225,8 @@ body {
 
 .form {
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    border-color: rgb(0, 0, 0);
+    border: 3px solid rgb(19, 19, 18);
+
 
 }
 
